@@ -1,0 +1,43 @@
+<h1>Products</h1>
+
+<div class="row">
+  <div class="column" style="border-right: dotted; border-width: thin">
+    <ul>
+      <li *ngFor="let product of products" class="pad">
+        <a [routerLink]="['details', product.id, 'fred', {foo: 'fool', me: 'Greg'}]"> {{product.name}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column" >
+    <h2>Details</h2>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .pad {
+    padding: 8px;
+  }
+
+  .hilight {
+    background-color: #FFFF00;
+  }
+</style>

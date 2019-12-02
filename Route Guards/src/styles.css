@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+button {
+  background-color: #1238b7;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.selected-route {
+  background-color: #de7c83;
+  border: #a00012 solid;
+}
+
+a {
+  border: none;
+  color: #1238b7;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+.a-selected {
+  background-color: rgba(251, 140, 148, 0.3);
+  color: #a00012;
+}
